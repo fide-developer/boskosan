@@ -1,0 +1,1133 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-color: #fafafa;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    height: auto;
+}
+h1{
+	font-size: 65;
+}
+h5{
+	font-size: 25;
+}
+button{
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    cursor: pointer;
+}
+.carousel{
+	top: 0;
+	height: 50%;
+	width: 100%;
+	position: relative;
+	transition: height .5s;
+ 
+}
+
+.carousel img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  	top: 0; left: 0;
+  	transition: all .5s;
+  	object-fit: cover;
+}
+.headkos{
+    top: 0;
+    height: 50%;
+    width: 100%;
+    position: relative;
+ 
+}
+
+.headkos img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    object-fit: cover;
+}
+nav{
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	height: 65px;
+	background-color: #610202;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 5%;
+	background-color: #190000;
+	min-height: 50px;
+	color: white;
+}
+footer #brandfoot{
+	padding: 30px 20px 10px 70px;
+	font-size-adjust: 20px;
+}
+.menu{
+	padding : 20px 20px 0 0;
+	float: right;
+}
+.menuContent{
+    color:white;
+    display: inline-block;
+    padding:auto center;
+    padding: 0 20px 0 20px; 
+    cursor: pointer;
+    background-color: red;
+    position: relative;
+}   
+}
+.content-drop{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding-top: 20px;
+    background-color: black;
+    right: 0;
+    cursor: default;
+}
+
+.menuContent:hover .content-drop{
+    display: block;
+}
+.content-drop a{
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    display: block;
+}
+.main-content{
+    padding: 1%;
+}
+.text-profil{
+    float: left;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.th-profil{
+    font-size: 23px;
+}
+.brder{
+    background-color: #f2f2f2;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+}
+.profilid{
+    overflow: hidden;
+}
+.profilimg{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    text-align: right;
+    width: 100%;
+}
+.boximg{
+    border-radius: 5px;
+    height: 3.5cm;
+    width: 3.5cm;
+    border: 1px solid #BDBDBD;
+}
+.navmenu{
+    width: 100%;
+}
+.navmenu a{
+    text-align: left;
+    color: black;
+    display: block;
+    padding: 5px 10px 5px 20px;
+}
+.navmenu a:hover{
+    border-left: 3px solid grey;
+    background-color: #fafafa;
+}
+
+.buttonmnu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: black;
+}
+
+.buttonmnu:hover{
+    opacity: 0.8;
+}
+
+#btn-modal{
+    display: block;
+    padding: 0;
+    color: white;
+    width: 102%;
+    margin-left: -1%;
+}
+
+#brand{
+	float: left;
+}
+
+#brand img{
+	padding: 11px 16px;
+	height: 65%;
+	width: 65%;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.container{
+    margin:0;
+    margin-top: 65px;
+    padding:0;
+    width: 100%;
+    max-width: 100%;
+}
+.sch-bos{
+	z-index: 0;
+	padding-bottom: 20px;
+}
+.sch-bos h1{
+	margin-top: 0;
+	padding: 50px 0 0;
+}
+.sch-kos{
+    display: block;
+	width: 40%;
+	height: 35px;
+    margin: auto;
+}
+
+.content{
+	margin: 35px 7% 0 7%;
+}
+.headsep {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	margin: 0;
+}
+.headsep::before,
+.headsep::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 50px;
+}
+.row{
+	clear: both;
+	display: table;
+	content: "";
+    width: 100%;
+}
+
+.freespace{
+	margin-top: 30px;
+}
+
+[class*="col-"]{float: left; padding-right:1%; padding-left: 1%;}
+.tabdata{word-wrap: break-word;}
+.col-num{width: 0%;}
+.col-21{width: 12.66%;}
+.col-1{width: 6.33%;}
+.col-2{width: 14.66%;}
+.col-3{width: 23%;}
+.col-4{width: 31.33%;}
+.col-5{width: 39.66%;}
+.col-6{width: 48%;}
+.col-7{width: 56.33%;}
+.col-8{width: 64.66%;}
+.col-9{width: 73%;}
+.col-10{width: 81.33%;}
+.col-11{width: 89.66%;}
+.col-12{width: 98%;}
+
+.col-identitas{
+    word-wrap: break-word;
+    width: 98%;
+    height: 5cm;
+    padding: 1%;
+}
+.col-identitas img{
+    float: left;
+    width: 3.3cm;
+    height: 4cm;
+    object-fit: cover;
+}
+
+.col-identitas table{
+    float: left;
+    width: 70%;
+    padding: 15px 0 0 25px;
+}
+.col-fasilitas{
+    height: 5cm;
+    padding: 1%;
+    word-wrap: break-word;
+    width: 98%;
+}	
+.col-daftarfasilitas{
+    width: 40%;
+}
+.col-picfasilitas{
+    position: relative;
+    float: right;
+    width: 55%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+.col-picfasilitas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.btn-nslide{
+    position: absolute;
+    display: block;
+    background-color: #f2f2f2;
+    margin:0;
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+}
+.caption-img{
+    position: absolute;
+    bottom: 8px;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+    background-color: #f2f2f2;
+}
+.left{
+    bottom: 8px;
+    left: 16px;
+}
+.right{
+    bottom: 8px;
+    right: 16px;
+}
+.img-galeri{
+    cursor: pointer;
+    width: 100%;
+    height: 450px;
+}
+.img-galeri:hover{
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+}
+.img-galeri img{
+    display: block;
+    float: left;
+    object-fit: cover;
+	width: 100%;
+	height: 300px;
+}
+.img-galeri-image{
+    position: relative;
+}
+.ketkam{
+    clear: both;
+    text-align: center;
+    max-height: 80px;
+    height: 80px;
+    padding: 15px;
+}
+.buttonklik{
+    color: #f2f2f2;
+    background-color: red;
+    height: 25px;
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 12.5px;
+}
+.harga{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    opacity: 0.7;
+    width: 97px;
+    background-color: red;
+    color: white;
+    padding: 15px 10px 15px 10px;
+}.body-regist{
+    background-image: url(../picture/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;    
+}
+.right-menu {
+    cursor: pointer;
+}
+.right-menu ul{
+    list-style-type: none;
+    margin: 8px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.right-menu li{
+    float: right;
+}
+
+.right-menu li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-filter {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    height: auto;
+}
+
+.button-filter:hover{
+    opacity: 0.8;
+}
+
+.collapsible {
+    background-color: #190000;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    height: auto;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    opacity: 0.8;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content-collapse {
+    position: relative;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+.content-collapse hr{
+    margin-bottom: 20px;
+}
+.content-collapse h1{
+    font-size: 20px;
+    text-align: center;
+}
+/* The container */
+.container-filter {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+}
+
+/* Hide the browser's default checkbox */
+.container-filter input {
+    position: absolute;
+    opacity: 100%;
+    left: 0;
+    z-index: 10000;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-filter:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-filter input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-filter input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-filter .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.content-facil h2{
+    color: #610202;
+}
+
+/* Create four equal columns that floats next to each other */
+.column-facil {
+    float: left;
+    width: 25%;
+    overflow: auto;
+}
+
+/* Content */
+.content-facil {
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.formid{
+    text-align: center;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #f2f2f2;
+    margin: auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.container-book {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    padding-top: 25px;
+}
+.input-modal{
+    display: block;
+    text-align: center;
+}
+.customInfile{
+    position: relative;
+    display: inline-block;
+}
+.Infile{
+    border: 1px solid gray;
+    background-color: gray;
+    padding: 2px 5px 2px 5px;
+    width: 70px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+.inpup{
+    background-color: #4CAF50;
+    display: inline-block;
+    z-index: 2;
+    padding: 2px 5px 2px 5px;
+    margin-left: 5px;
+    border:none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.customInfile input[type=file]{
+    width: 53px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: inline-block;
+}
+.input-modal label{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 20%;
+    min-width: 170px;
+    display: inline-block;
+}
+.input-modal input, textarea, select{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 1% 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.for-regist label{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2% 0;
+    display: inline-block;
+}
+
+.for-regist input, textarea, select{
+     width: 100%;
+    padding: 12px 20px;
+    margin: 1% 0 0 50%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.button-modal {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.button-modal:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.cancelbtn {
+    display: inline-block;
+    width: auto;
+    width: 100px;
+    background-color: #f2f2f2;
+    /*background-color: #f44336;*/
+    cursor: pointer;
+    border: none;
+}
+
+.cancelbtn:hover{
+    opacity: 0.8;
+}
+
+hr {
+    border: 1px solid;
+    color: rgba(0, 0, 0, 0.60);
+    /*margin-bottom: 25px;
+    margin-top: 0;*/
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.regist{
+    width: auto;
+    text-align: center;
+}
+
+.regist input, select, textarea{
+    width: 300px;
+    padding: 12px 20px;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;   
+    
+}
+
+.regist label{
+    width: 20%;
+    padding: 12px 30px;
+    margin: 2% 0;
+    display: inline-block;   
+}
+.con-regist {
+    border-radius: 5px;
+    width: 50%;
+    background-color: #f2f2f2;  
+    margin: 0 6% 0 25%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.regist button{
+    width: 15%;
+    padding: 12px 20px;
+    margin-right: 13%;
+    display: inline-block;
+    box-sizing: border-box;   
+}
+
+/* Style the tab */
+.tab-regist {
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab-regist button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab-regist button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab-regist button.active {
+    background-color: #ccc;
+}
+
+.conten-regist {
+    border-radius: 5px;
+    width: 50%;
+    background-color: #f2f2f2;
+    margin-top: 0;
+    margin: -0.6% 6% 0 25%;
+    text-align: center;
+}
+
+.row-det > .column-det {
+    padding: 0 8px;
+}
+
+.row-det:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-det {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.content-detail{
+    width: 80%;    
+    display: block;
+    background-color: white;
+    margin: 0 8% 0 8%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2.5px 2.5px #f2f2f2;
+}
+
+.det-kos{
+    margin-top: -4.5%;
+    margin-bottom: 3%;
+    margin-left: 0.7%;
+    z-index: 1;
+}
+
+.det-kos hr{
+    width: 99%;
+    margin-left: 0.1%;
+    border: 0.1px solid;
+}
+
+.column-det img.hover-shadow {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.order-but{
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 8px -5%;
+    cursor: pointer;
+    height: 50%;
+    border-radius: 5px;
+    float: right;   
+}
+
+/* The Modal (background) */
+.modal-det {
+  display: none;
+  position: fixed;
+  z-index: 4;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.95); /* Black w/ opacity */ 
+}
+
+/* Modal Content */
+.modal-condet {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 35%;
+  height: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0;
+  width: 20px;
+  border: 1px solid gray;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+    display: block;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: rgba(0,0,0,0.05); /* Black w/ opacity */
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#ketkamar{
+    width: 80%;    
+    display: block;
+    background-color: white;
+    margin: 4% 8% 0 8%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2.5px 2.5px #f2f2f2;
+}
+
+.history{
+    margin: 0 -4% 1% 8%;
+}
+
+.history ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #fafafa;
+}
+.history ul.breadcrumb li {
+    
+    display: inline;
+    font-size: 18px;
+}
+.history ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+}
+.history ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+.history ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+#pasik{
+    margin-left: 2%;
+}
+.inpeng input, select, textarea:focus{
+    width: 600px;
+    padding: 12px 20px;
+    margin-left: : 4%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;   
+    
+}
+.inpeng label{
+    width: 20%;
+    padding: 12px 30px;
+    margin: 4% 0 0 10%;
+    display: inline-block;
+    text-align: left;   
+}
+.uppeng input, label{
+    text-align: center;
+    margin-left: 20%;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.dropdown {
+    position: static;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 10;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*responsive*/
+@media(max-width: 500px){
+ .menuContent{
+    display: none;
+ }
