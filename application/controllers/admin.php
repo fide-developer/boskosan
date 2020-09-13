@@ -16,7 +16,8 @@ class Admin extends CI_Controller {
         }else{
         	redirect('Boskosan');
         }
-    }
+	}
+	//asdasd
 
 	public function index()
 	{
